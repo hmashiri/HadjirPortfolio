@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="app/style.css" />
 <style>
+	/* Create a scroll bar for the state pages */
+	#scroll
+	{
+	    width:auto;
+	    height:auto;
+	    overflow-y: auto;
+	    max-width:auto;
+	    max-height:400px;
+	}
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -24,7 +33,7 @@
     
     /* Set black background color, white text and some padding */
     footer {
-      background-color: #555;
+      background-color: black;
       color: white;
       padding: 15px;
     }
@@ -75,7 +84,7 @@
       <p><a href="#">Link</a></p>
     </div>
     <div class="col-sm-8 text-left"> 
-      <div ui-view></div>
+      <div id="scroll" ui-view></div>
     </div>
     <div class="col-sm-2 sidenav">
       <div class="well">
