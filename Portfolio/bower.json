@@ -1,0 +1,28 @@
+{
+  "name": "Hadjir Mashiri",
+  "authors": [
+    "Hadjir Mashiri <hmashiri@hotmail.com>"
+  ],
+  "description": "Portfolio",
+  "main": "index.html",
+  "keywords": [
+    "A",
+    "little",
+    "about",
+    "myself"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.1",
+    "jquery": "^3.1.1"
+  }
+}
