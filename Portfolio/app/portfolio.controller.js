@@ -2,13 +2,13 @@
     'use strict';
 
     angular
-        .module('myPortfolio')
+        .module('app')
         .controller('PortfolioController', PortfolioController);
 
-    PortfolioController.$inject = ['PortfolioController'];
+    PortfolioController.$inject = [];
 
     /* @ngInject */
-    function PortfolioController(PortfolioController) {
+    function PortfolioController() {
         var vm = this;
         vm.title = 'Controller';
 
