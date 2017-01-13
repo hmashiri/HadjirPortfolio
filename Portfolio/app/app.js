@@ -7,21 +7,33 @@
     app.config(function($stateProvider, $urlRouterProvider) {
 
 
-        $urlRouterProvider.otherwise("/aboutme");
+        $urlRouterProvider.otherwise("/home");
 
         $stateProvider
-            .state('aboutme', {
+        	.state("home", {
+        		url:"/home",
+        		templateUrl: "app/partials/home.html",
+        		controller: "PortfolioController",
+        		controllerAs: "vm"
+        	})
+            .state("aboutme", {
                 url: "/aboutme",
                 templateUrl: "app/partials/aboutme.html",
-                controller: 'PortfolioController',
-                controllerAs: 'vm'
+                controller: "PortfolioController",
+                controllerAs: "vm"
             })
-            .state('projects', {
+            .state("projects", {
                 url: "/projects",
               	templateUrl: "app/partials/projects.html",
-                controller: 'PortfolioController',
-                controllerAs: 'vm'
+                controller: "PortfolioController",
+                controllerAs: "vm"
 
+            })
+            .state("contact", {
+            	url: "/contact",
+            	templateUrl:"app/partials/contact.html",
+            	controller: "PortfolioController",
+            	controllerAs: "vm"
             })
     })
 })();
